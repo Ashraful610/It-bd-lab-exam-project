@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* navbar section */
+#navbar-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 15px 100px;
+}
+/* logo-div */
+#logo-div img{
+    width: 150px;
+}
+/* nav link */
+#nav-link > li{
+    color: white;
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 20px;
+}
