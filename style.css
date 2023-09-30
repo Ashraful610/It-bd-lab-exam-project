@@ -3,198 +3,52 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* navbar section */
-#navbar-section{
+.container{
+    width: 90%;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+/* ------------ navbar style start ---------- */
+nav{
+    width: 100vw;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    background-color: #191919;
+}
+.navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
-    padding: 15px 100px;
 }
-/* logo-div */
-#logo-div img{
-    width: 150px;
+.logo-div img{
+    height: 40px;
 }
-/* nav link */
-#nav-link > li{
-    color: white;
+.nav-link li{
+    display: inline;
     list-style: none;
-    display: inline-block;
-    margin: 0 20px;
+    padding: 0 30px;
+}
+.fa-bars{
+    display: none  !important;
+    color: white;
     font-size: 20px;
 }
-/*--------------- banner section -------------- */
-#banner-section{
-    width: 100%;
-    height: calc(100vh - 70px);
-    background-color: orange ;
-    padding: 0 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/* ---------- media query  --------- */
+@media (max-width: 910px) {
+    .nav-link li{
+        padding: 0 20px;
+    }
 }
-/* ------- content div ------- */
-.content-div{
-    width: 50%;
-}
-.content-div h1{
-    font-size: 50px;
-    font-weight: bold;
-    color: white;
-}
-.content-div p{
-    font-size: 25px;
-    color: white;
-    margin: 25px 0;
-}
-.btn{
-    font-size: 15px;
-    padding: 12px 20px;
-    border-radius: 5px;
-    color: white; 
-    font-weight: bold;
-}
-#contact-btn{
-    background-color: black;
-    border: 2px solid black;
-}
-#service-btn{
-    background-color: transparent ;
-    border: 2px solid white;
-    margin-left: 20px;
-}
-/* ---- img div --------- */
-.img-div{
-    width: 50%;
-    display: flex ;
-    justify-content: center;
-}
-.img-div img{
-    width: 300px;
-}
-/* ------------- animal section start -------- */
-#animals-section{
-    width: 100%;
-    height: calc(100vh - 70px);
-    padding: 0 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.animal-content{
-    width: 50%;
-}
-.animal-content h1{
-    font-size: 50px;
-    font-weight: bold;
-    color: black;
-}
-.animal-content p{
-    font-size: 25px;
-    color: black;
-    margin: 25px 0;
-}
-#service-btn-2{
-    background-color: orange ;
-    border: 2px solid white;
-}
-.animal-img-div-1{
-    width: 50%;
-    height: 100%;
-    position: relative;
-}
-.animal-img-div-1::before{
-    content: '';
-    width: 200px;
-    height: 200px;
-    background-color: orange !important;
-    position: absolute;
-    bottom: 50px;
-    left: 20px;
-    z-index: 0;
-}
-.animal-img-div-1 img{
-    width: 380px;
-    z-index: 1;
-    position: absolute;
-    left: 40px;
-    bottom: 70px;
-}
-/*  title seciton */
-.title-section{
-    background-color: orange;
-    width: 100%;
-    height: fit-content;
-    padding: 50px 100px 50px;
-}
-.title-div{
-    width: 60%;
-    margin: 0 auto;
-}
-.title-div h1{
-    font-size: 50px;
-    color: white;
-    text-align: center;
-}
-.title-div p{
-    font-size: 20px;
-    color: white;
-    text-align: center;
-}
-
-.gallery-div{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
-}
-.card-div{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.card-div img{
-    width: 300px;
-}
-.card-div h1{
-    font-size: 30px;
-    color: white;
-}
-.card-div p{
-    font-size: 20px;
-    color: white;
-}
-#second-animal-content{
-    text-align: right;
-}
-.money{
-    text-align: center;
-    padding: 20px;
-}
-.dolar{
-    text-decoration: line-through;
-}
-.buy-btn{
-    background-color: black;
-    color: white;
-    font-size: 15px;
-    border-radius: 20px;
-    padding: 10px 30px;
-    border: none ;
-}
-
-/* ---------- footer */
-footer{
-    height: 80px;
-    background-color: black;
-    color: white;
-    padding: 0 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.media i{
-    margin: 0 20px;
-    font-size: 20px;
+@media (max-width:776px) {
+    .nav-link{
+        display: none;
+    }
+    .fa-bars{
+        display: block !important; 
+    }
 }
