@@ -106,6 +106,13 @@
     .doctor-details p{
         font-size: 25px;
     }
+    /* ---------------------------- footer section style -------------- */
+    .footer-content h3{
+        font-size: 18px;
+    }
+    .footer-content > ul > li{
+        font-size: 20px;
+    }
 }
 @media (max-width:510px) {
     .container{
@@ -127,5 +134,17 @@
     }
     .doctor-details p{
         font-size: 20px;
+    }
+    /* --------------------- footer section style ---------------- */
+    .footer-content{
+        height: fit-content;
+        display: block;
+        text-align: center;
+    }
+    .footer-content h3{
+        font-size: 15px;
+    }
+    .footer-content > ul > li{
+        font-size: 18px;
     }
 }
