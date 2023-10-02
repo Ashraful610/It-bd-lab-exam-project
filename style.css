@@ -47,8 +47,8 @@ nav{
 /* -------------- banner style start -------- */
 .banner{
     width: 100%;
-    max-height: fit-content;
     min-height:100%;
+    max-height: fit-content;
     background-color: #ffc400;
     padding: 30px 0px;
 }
@@ -101,12 +101,13 @@ nav{
 /* ------------------ --- veter section style ------------ */
 .veter{
     width: 100%;
-    min-height: 100%;
+    min-height:100vh;
     max-height: fit-content;
 }
 .veter-content{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: fit-content;
     display: flex;
     flex-flow: wrap;
     align-items: center;
@@ -141,4 +142,74 @@ nav{
  .veter-img-div img{
     width: 90%;
     height: 70%;
+}
+/* --------------------------- doctor section style ----------------- */
+.doctor-section{
+    width: 100%;
+    min-height: 100vh;
+    max-height: fit-content;
+    background-color: #ffc400;
+    padding:30px 0px;
+}
+.title-div{
+    text-align: center;
+    color: white;
+    padding: 20px 150px;
+}
+.title-div h1{
+    font-size: 50px;
+}
+.title-div p{
+    font-size: 20px;
+}
+.doctor-container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+.doctor-content{
+    width: 32%;
+}
+.doctor-content img{
+    width: 100%;
+}
+.doctor-details {
+    padding: 20px 10px;
+    text-align: center;
+    color: white;
+}
+.doctor-details h1{
+    font-size: 30px;
+}
+/* ---------------------- second veterinarian section style ------------ */
+.second-veter-details{
+    text-align: right;
+}
+/* ------------------------ dog section style */
+.delete{
+    position: relative;
+    margin: 0 20px;
+}
+.delete::after{
+    content: '';
+    width: 100px;
+    height: 4px;
+    background-color: white ;
+    position: absolute;
+    top: 50%;
+    left: -40%;
+}
+.buy-now{
+    width: 120px;
+    font-size: 15px;
+    font-weight: bold ;
+    color: white;
+    padding: 10px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 50px;
+    background-color: black ;
+    cursor: pointer;
 }
