@@ -1,0 +1,97 @@
+/* ---------- media query  --------- */
+@media (max-width: 1024px) {
+    /* --------- navbar style --------- */
+    a{
+        font-size: 17px;
+    }
+    .nav-link li{
+        padding: 0 17px;
+    }
+    /* ---------- banner style ------------ */
+    .banner-details{
+        width: 60%;
+        padding-right: 30px;
+    }
+    .banner-details h1{
+        font-size: 45px;
+    }
+    .banner-details p{
+        font-size: 18px;
+    }
+    .btn{
+        padding: 8px;
+    }
+    .banner-img-div{
+        width: 40%;
+    }
+    .banner-img-div img{
+        width: 320px;
+    }
+    /* ----------------- veter section responsive style ----------- */
+    .veter-details h1{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .veter-details p {
+        font-size: 15px;
+        margin: 0 0 15px 0;
+    }
+    .veter-details .our-service-btn{
+        padding:  10px;
+    }
+}
+@media (max-width:860px){
+    /* ---------- banner responsive style --------- */
+    .banner-details{
+        width: 100%;
+    }
+    .banner-img-div{
+        width: 100%;
+        justify-content: center;
+        padding: 20px;
+    }
+}
+@media (max-width:776px) {
+    /* ---------- navbar responsive style ------- */
+    .nav-link{
+        display: none;
+    }
+    .fa-bars{
+        display: block !important; 
+    }
+    /* ---------------- banner responsive style ------------ */
+    .banner-details{
+        width: 100%;
+    }
+    /* -------------- veter section responsive style ------------ */
+    .veter-details{
+        width: 100%;
+        height: fit-content;
+        padding: 50px 20px;
+        /* margin-top: 50px; */
+    }
+    .veter-img-div{
+        width: 100%;
+        align-items: normal ;
+    }
+    .veter-img-div img{
+        width: 80%;
+    }
+}
+@media (max-width:510px) {
+    .container{
+        width: 90%;
+    }
+    /* -------------- banner responive style ----------  */
+    .banner-details{
+        padding-right: 0;
+    }
+    .banner-details h1{
+        font-size: 35px;
+    }
+    .banner-details p{
+        font-size: 18px;
+    }
+    /* ------------ ----------- veter section responsive style ----------- */
+    
+}
